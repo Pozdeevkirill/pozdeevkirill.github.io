@@ -1,0 +1,439 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.menu {
+	width: 100%;
+	max-width: 1173px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 18px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.menu-logo {
+	margin-left: 9px;
+}
+
+.name-logo {
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.avatar-logo {
+	width: 57px ;
+	height: 57px;
+	background: url('https://pp.userapi.com/c851428/v851428113/80e74/CblJRLKmdoc.jpg');
+	border-radius: 50%;
+	background-size: 100%;
+}
+
+.menu-list {
+	display: flex;
+	align-items: center;
+}
+
+.work {
+	text-decoration: none;
+	color: #2b2a2c;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-right: 34px;
+}
+
+.menu-button {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 800;
+	color: none;
+	background-color: transparent;
+	border-radius: 19px;
+	border: 2px solid #2b2a2c;
+	padding: 13px 22px;
+}
+
+.info {
+	width: 100%;
+	max-width: 1174px;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: 100%;
+
+}
+
+.hello {
+	width: 384px;
+	color: #2b2a2c;
+	font-family: "Open Sans";
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.info-name {
+	font-family: "Open Sans - Extra Bold";
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 48px;
+}
+
+.developer {
+	width: 201px;
+	height: 19px;
+	color: #6a696b;
+	font-family: "Open Sans";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 15px;
+	margin-top: 8px;
+	padding-bottom: 26px;
+}
+
+.social {
+	text-decoration: none;
+}
+
+.instagram {
+	margin-left: 12px;
+}
+
+.facebook {
+	margin-left: 12px;
+}
+
+.button-info {
+	margin-top: 50px;
+}
+
+.send {
+	width: 128px;
+	height: 13px;
+	font-family: "Open Sans - Extra Bold";
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 15px;
+}
+
+.my {
+		width: 113px;
+		height: 17px;
+		font-family: "Open Sans - Extra Bold";
+		font-size: 16px;
+		font-weight: 800;
+		line-height: 15px;
+}
+
+.button1 {
+	line-height: 15px;
+	border-radius: 50%;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 800;
+	color: #fff;
+	background-color: #2b2a2c;
+	border-radius: 19px;
+	border: 2px solid #2b2a2c;
+	padding: 13px 22px;
+}
+
+.button2 {
+	line-height: 15px;
+	border-radius: 50%;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 800;
+	color: #6a696b;
+	background-color: transparent;
+	border-radius: 19px;
+	border: 2px solid #2b2a2c;
+	padding: 13px 22px;
+	margin-left: 18px;
+}
+
+.photo_developer {
+	float: right;
+	margin-right: 74px;
+}
+
+.privet {
+	background: url('img/background.png');
+	width: 1174px;
+	height: 493px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 42px;
+}
+
+.project {
+	width: 100%;
+	max-width: 1171px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 91px;
+}
+.container {
+    width: 1171px;
+		display: flex;
+    flex-wrap: wrap;
+		justify-content: center;
+}
+
+.images {
+	width: 480px;
+	height: 300px;
+	border-radius: 10px 10px 0 0;
+	background-color: #717072;
+}
+
+.text {
+	width: 480px;
+	height: 71px;
+	border-radius: 0 0 10px 10px;
+  padding: 20px 13px;
+}
+
+.category {
+	width: 64px;
+	height: 12px;
+	color: #2b2a2c;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	display: flex;
+	margin-left: 13px;
+}
+
+.name-project {
+	width: 171px;
+	height: 12px;
+	color: #2b2a2c;
+	font-family: "Open Sans - Extra Bold";
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 15px;
+	text-transform: uppercase;
+	margin-left: 13px;
+}
+
+.date {
+	width: 37px;
+	height: 13px;
+	color: #2b2a2c;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 15px;
+	float: right;
+	margin-right: 20px;
+}
+
+.text-my-project {
+	width: 1171px;
+	display: block;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid red;
+}
+
+.project-card {
+	overflow: hidden;
+	width: 480px;
+	height: 370p;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	display: block;
+	margin-right: 31px;
+	margin-bottom: 50px;
+}
+
+
+ a .box {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+.about-me {
+	width: 1072px;
+	height: 606px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 117px;
+	display: flex;
+}
+
+.photo_developer2 {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.about-me-text {
+	margin-top: 131px;
+	margin-left: 61px;
+}
+
+.about-me-text-1 {
+	width: 211px;
+	height: 34px;
+	color: #2b2a2c;
+	font-family: "Open Sans - Extra Bold";
+	font-size: 45px;
+	font-weight: 800;
+	line-height: 15px;
+	text-transform: uppercase;
+}
+
+.about-me-text-2 {
+	width: 471px;
+	height: 252px;
+	color: #717072;
+	font-family: "Open Sans - Extra Bold";
+	font-size: 16px;
+	font-weight: 350;
+	line-height: 24px;
+	display: block;
+	margin-top: 42px;
+}
+
+.button-about-me {
+	display: flex;
+	align-items: flex-end;
+	margin-top: 60px;
+}
+
+.send-me {
+	line-height: 15px;
+	border-radius: 19px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 800;
+	color: #fff;
+	font-family: "Open Sans - Extra Bold";
+	background-color: #2b2a2c;
+	border-radius: 19px;
+	border: 2px solid #2b2a2c;
+	padding: 13px 22px;
+	box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.my-resume {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 800;
+	color: none;
+	background-color: transparent;
+	border-radius: 19px;
+	border: 2px solid #2b2a2c;
+	padding: 13px 22px;
+	margin-left: 17px;
+}
+
+footer a {
+	color: #8d8d8e;
+}
+
+.footer {
+	width: 1170px;
+	height: 62px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.prava {
+	height: 13px;
+	color: #8d8d8e;
+	font-family: "Open Sans - Extra Bold";
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.polosa {
+	width: 1px;
+	height: 21px;
+	background-color: #413f41;
+	margin-left: 16px;
+}
+
+.social2 {
+	margin-left: 16px;
+}
+
+.fab {
+	color: #8d8d8e;
+	padding-right: 16px;
+}
+
+.menu2  {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	text-decoration: none;
+	padding-right: 25px;
+	padding-left: 120px;
+}
+
+.mm2 {
+	margin-left: 17px;
+}
+
+.button3 {
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 800;
+	color: none;
+	background-color: transparent;
+	border-radius: 19px;
+	border: 2px solid #8d8d8e;
+	padding: 10px 19px;
+}
+
+/*hover-affects*/
+
+.menu-button:hover{
+	color: white;
+	background-color: #2b2a2c;
+}
+
+.button1:hover {
+	background-color: transparent;
+	color: #2b2a2c;
+}
+
+.button2:hover {
+	background-color: #2b2a2c;
+	color: #fff	;
+}
+
+.send-me:hover {
+	background-color: transparent;
+	color: #2b2a2c;
+}
+
+.my-resume:hover {
+	background-color: #2b2a2c;
+	color: #fff;
+}
+
+.button3:hover {
+	background-color: #2b2a2c;
+	color: white;
+}
+
+.work:hover {
+	text-decoration: underline;
+}
+
+.project-card:hover {
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+}
