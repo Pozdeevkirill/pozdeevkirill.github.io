@@ -121,12 +121,12 @@ body {
 }
 
 .my {
-		width: 113px;
-		height: 17px;
-		font-family: "Open Sans - Extra Bold";
-		font-size: 16px;
-		font-weight: 800;
-		line-height: 15px;
+	width: 113px;
+	height: 17px;
+	font-family: "Open Sans - Extra Bold";
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 15px;
 }
 
 .button1 {
@@ -178,10 +178,14 @@ body {
 	margin-top: 91px;
 }
 .container {
-    width: 1171px;
-		display: flex;
-    flex-wrap: wrap;
-		justify-content: center;
+  width: 1171px;
+	display: flex;
+  flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-card {
+	border-radius: 10px;
 }
 
 .images {
@@ -189,6 +193,12 @@ body {
 	height: 300px;
 	border-radius: 10px 10px 0 0;
 	background-color: #717072;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.images1 {
+	background: url(http://freebiesxpress.com/wp-content/uploads/2014/03/Golden-one-page-template-main.jpg);
+	
 }
 
 .text {
@@ -208,6 +218,7 @@ body {
 	line-height: 15px;
 	display: flex;
 	margin-left: 13px;
+	padding-bottom: 30px;
 }
 
 .name-project {
