@@ -22,6 +22,7 @@ a {
 .container {
   width: 1177px;
   margin: 0 auto;
+	overflow-x: hidden !important;
 }
 
 .menu-list__logo {
