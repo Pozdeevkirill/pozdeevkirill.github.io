@@ -1,0 +1,294 @@
+body {
+	font-family: 'Sintony', sans-serif;
+	color: #5c6369;
+}
+
+ul, li, a{
+	display: block;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+p {
+	line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	color: #14141d;
+}
+
+.main__header {
+	padding: 24px 0;
+}
+
+.menu {
+	font-weight: 700;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 12px;
+}
+
+.menu__item  a{
+	color: #2c465a;
+	text-transform: uppercase;
+}
+
+.ctr {
+	background-color: #fea100;
+	color: #fff;
+	border-radius: 3px;
+	text-transform: uppercase;
+	padding: 15px 0;
+	display: block;
+	width: 200px;
+	border: 0;
+	cursor: pointer;
+	font-weight: 700;
+	margin-top: -5px;
+
+}
+
+.book__icon {
+	background: url(../img/order.png);
+	width: 21px;
+	height: 17px;
+	display: block;
+	margin-right: 13px;
+}
+
+.offer {
+	background: url(../img/first-bg.jpg) no-repeat center top;
+}
+
+.title {
+	padding: 220px 0px;
+}
+
+.title__heading {
+	font-size: 56px;
+	line-height: 30px;
+	color: #fff;
+}
+
+.title__desc {
+	color: #fff;
+	font-family: "Playfair Display";
+	font-size: 40px;
+	font-weight: 700;
+	margin-top: -10px;
+}
+.title__desc span{
+	color: #fea100;
+}
+
+.call {
+	border-bottom:1px solid #dde3e7;
+	padding: 30px 0;
+	background-color: #edf1f3;
+}
+
+.phone {
+	display: flex;
+	width: 444px;
+}
+
+.phone__text {
+	background: url(../img/phone.png) no-repeat left center;
+	color: #14141d;
+	font-family: 'Sintony';
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 180px;
+	padding-left: 56px;
+	padding-top: 5px;
+}
+
+.phone__text span {
+	color: #fea100;
+	margin-top: -4px;
+	display: block;
+}
+
+.phone__digits {
+	color: #14141d;
+	font-family: "Playfair Display";
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-left: 42px;
+	margin-top: -5px;
+}
+
+.history {
+	padding-top: 60px;
+}
+
+.history__title {
+	font-family: "Playfair Display";
+	color: #14141d;
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+.history__text {
+	font-family: 'Sintony';
+	color: #5c6369;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+.history__button {
+	width: 149px;
+	margin-top: 47px;
+	padding: 0 auto;
+	text-align: center;
+}
+
+.ctr:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+.food-images__item {
+	margin-bottom: 10px;
+}
+
+.food-images__down {
+	margin-top: 50px;
+}
+
+.about {
+	padding-top: 65px;
+	padding-bottom: 100px;
+}
+
+.special {
+	background: url(../img/third-bg.jpg) no-repeat center top;
+	padding-top: 80px;
+}
+
+.special__title {
+	color: #fff;
+	font-size: 35px;
+	text-align: center;
+}
+
+.left {
+	padding-left: 31px;
+}
+
+.food {
+	margin-bottom: 128px;
+	margin-top: 20px;
+	width: 569px;
+	box-shadow: 0 10px 90px rgba(0, 0, 0, 0.2);
+}
+
+.food__img {
+	margin-bottom: 45px;
+}
+
+.food__title {
+	font-size: 26px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.food__desc {
+	text-align: center;
+	font-size: 14px;
+	padding: 0px 60px;
+}
+
+.food__details {
+	border-top: 3px solid #e1e1e1;
+	padding-top: 12px;
+	text-align: left;
+	padding-bottom: 24px;
+	padding-left: 48px;
+	padding-right: 48px;
+}
+
+.food__del {
+	color: #fe4c8d;
+	font-family: 'Sintony';
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 17px;
+	width: 78px;
+	border-right: 1px solid #e1e1e1;
+}
+
+.food__del span {
+	color: #14141d;
+}
+
+.food__phone {
+	color: #14141d;
+	font-family: "Playfair Display";
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.food__price {
+	color: #fea100;
+	font-family: "Playfair Display";
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+.footer {
+	background: #373844;
+	color: #93989e;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 72px 106px;
+}
+
+.social {
+	width: 170px;
+	justify-content: space-around;
+	margin: auto;
+}
+
+.social__item  {
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+}
+
+.social__item_fb {
+	background: #3b5998 url(../img/fb.png) no-repeat center;
+}
+.social__item_tw {
+	background: #55acee url(../img/tw.png) no-repeat center;
+}
+.social__item_g {
+	background: #dd4b39 url(../img/g.png) no-repeat center;
+}
+
+.reserved {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.line {
+	background: #52535e;
+	height: 1px;
+	margin-top: 7px;
+ margin-top: 50px;
+}

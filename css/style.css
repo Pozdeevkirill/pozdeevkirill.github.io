@@ -1,7 +1,5 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	
-	
 }
 
 .menu {
@@ -209,6 +207,11 @@ body {
 
 .images3 {
 	background: url(../img/fon2.png) no-repeat center;
+	background-size: 100%;
+}
+
+.images4 {
+	background: url(../img/fon3.png) no-repeat center;
 	background-size: 100%;
 }
 
