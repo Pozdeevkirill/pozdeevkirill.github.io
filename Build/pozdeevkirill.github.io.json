@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "WebXRTest",
+"productVersion": "0.1",
+"dataUrl": "pozdeevkirill.github.io.data.unityweb",
+"wasmCodeUrl": "pozdeevkirill.github.io.wasm.code.unityweb",
+"wasmFrameworkUrl": "pozdeevkirill.github.io.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#800020",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.18f1"
+}
