@@ -127,6 +127,13 @@ header{
 
 /*---------------------*/
 
+.type4{
+    margin-top: 15px;
+    background: linear-gradient(to right,var(--main-color) 25%, var(--second-color)50%);
+}
+
+/*---------------------*/
+
 .type3 {
     margin-top: 15px;
     background-color: var(--second-color);
