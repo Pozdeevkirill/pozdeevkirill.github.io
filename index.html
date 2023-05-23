@@ -1,84 +1,114 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- These tags are needed for enabling experimental Chrome APIs via Chrome's Origin-Trial program (Android, Windows): https://github.com/GoogleChrome/OriginTrials/blob/gh-pages/available-trials.md#current-experimental-features -->
-    <!-- Origin Trial Token, feature = Generic Sensors, origin = https://github.io, expires = 2018-04-10 -->
-    <meta http-equiv="origin-trial" data-feature="Generic Sensors" data-expires="2018-04-10" content="Aokv0ODVMUPIswIBi6DnpAIjhWefEd8gD8GpVgdYgETj0C5+/3kKMzZE/FOrBwHcpBO6LHuVRrIw3yOT8EMmJAYAAABQeyJvcmlnaW4iOiJodHRwczovL2dpdGh1Yi5pbzo0NDMiLCJmZWF0dXJlIjoiR2VuZXJpY1NlbnNvciIsImV4cGlyeSI6MTUyMzMxODQwMH0=">
-    <!-- Origin Trial Token, feature = WebVR (For Chrome M62+), origin = https://github.io, expires = 2018-05-07 -->
-    <meta http-equiv="origin-trial" data-feature="WebXR (For Chrome M62+)" data-expires="2018-05-07" content="AgINztgDnjFV8da2D9SSzIITBRlHX8mduCR7DXfENxjr9ALduKOxBDdn2n66auQSlljVyhnRWWerxC0BWbE8pAoAAABOeyJvcmlnaW4iOiJodHRwczovL2dpdGh1Yi5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViVlIxLjFNNjIiLCJleHBpcnkiOjE1MjU3MjU4MDh9">
-    <title>Пися | TestWebXR2018.3.14</title>
-    <meta name="description" content="">
-    
-    <link rel="icon" href="favicon.ico">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" type="text/css" href="styles/webxr.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="type1 ">
+        <div class="container type1_container">
+            <div class="logo">
+                <img src="Logo.png" alt="">
+            </div>
+            <div class="menu">
+                <div class="menu_up">
+                    <ul>
+                        <li class="menu_item"><a href="#">Сведения об образовательной организации</a></li>
+                        <li class="menu_item"><a href="#">Абитуриенту</a></li>
+                        <li class="menu_item"><a href="#">Студенту</a></li>
+                        <li class="menu_item"><a href="#">Родителям</a></li>
+                        <li class="menu_item"><a href="#">Сотруднику</a></li>
+                        <li class="menu_item"><a href="#">Воспитание</a></li>
+                        <li class="menu_item"><a href="#">ВСОКО</a></li>
+                    </ul>
+                </div>
+                <div class="menu_down">
+                    <a class="colorblidnes_btn" href="#">
+                        <img src="colorblidnes.png" alt="">
+                        Версия для слабовидящих
+                    </a>
+                </div>
+            </div>
+            <div class="right_menu">
+                <div class="search">
+                    <input type="text" placeholder="Поиск"/>
+                    <a href="#"><img src="search.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <script src="lib/telemetry.js"></script>
-    <script>
-      MozillaResearch.telemetry.start({
-        analytics: true,
-        errorLogging: true,
-        performance: true
-      });
-      MozillaResearch.telemetry.performance.mark('LoaderParsingStart');
-    </script>
+    <header class="type2 ">
+        <div class="container type1_container">
+            <div class="logo">
+                <img src="Logo.png" alt="">
+            </div>
+            <div class="menu">
+                <div class="menu_up">
+                    <ul>
+                        <li class="menu_item"><a href="#">Сведения об образовательной организации</a></li>
+                        <li class="menu_item"><a href="#">Абитуриенту</a></li>
+                        <li class="menu_item"><a href="#">Студенту</a></li>
+                        <li class="menu_item"><a href="#">Родителям</a></li>
+                        <li class="menu_item"><a href="#">Сотруднику</a></li>
+                        <li class="menu_item"><a href="#">Воспитание</a></li>
+                        <li class="menu_item"><a href="#">ВСОКО</a></li>
+                    </ul>
+                </div>
+                <div class="menu_down">
+                    <a class="colorblidnes_btn" href="#">
+                        <img src="colorblidnes.png" alt="">
+                        Версия для слабовидящих
+                    </a>
+                </div>
+            </div>
+            <div class="right_menu">
+                <div class="search">
+                    <input type="text" placeholder="Поиск"/>
+                    <a href="#"><img src="search.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-        UnityLoader.SystemInfo.mobile = false;  // Workaround to force `UnityLoader` to actually load on mobile.
-        window.gameInstance = UnityLoader.instantiate('gameContainer', 'Build/pozdeevkirill.github.io.json', {
-          Module: {
-            // `preserveDrawingBuffer` is needed for WebVR content to be mirrored to the `<canvas>`.
-            webglContextAttributes: {
-              preserveDrawingBuffer: true
-            }
-          },
-          onProgress: unityProgress
-        });
-
-        function unityProgress (gameInstance, progress) {
-          if (!gameInstance.progress) {
-            gameInstance.loader = document.getElementById('loader');
-            gameInstance.progress = document.getElementById('progress');
-            gameInstance.loading = document.getElementById('loading');
-            document.dispatchEvent(new CustomEvent('UnityProgressStart'));
-          }
-          gameInstance.progress.style.width = (100 * progress) + '%';
-          if (progress === 1) {
-            document.dispatchEvent(new CustomEvent('UnityLoaded'));
-          }
-        }
-    </script>
-  </head>
-  <body>
-    <div id="loader">
-      <div id="loading" class="loading">Loading</div>
-      <div id="progress" class="progress"></div>
-    </div>
-
-    <div id="game">
-      <div id="gameContainer"></div>
-    </div>
-
-    <div id="instruction">
-      <div id="novr" class="panel center">
-        <h3>You&rsquo;ll need a <a href="https://developer.mozilla.com/topics/mixed-reality/">WebXR-enabled browser</a> and VR headset to fully enjoy this experience.</h3>
-        <p><img src="mousedrag.png" width="70" alt="Click-and-drag your mouse"></p>
-        <p>In the meantime, <strong><em>click and drag</em></strong> to have a look around!</p>
-        <p>
-          <button class="confirm">Continue</button>
-        </p>
-      </div>
-    </div>
-
-    <button id="enterxr" value="Enter VR"></button>
-
-    <div id="performance" data-enabled="false"></div>
-
-    <script src="vendor/gl-matrix-min.js"></script>
-    <script src="webxr.js"></script>
-  </body>
-
+    <header class="type3">
+            <div class="container type3_container">
+                <div class="left_header">
+                    <div class="logo">
+                        <img src="Logo.png" alt="">
+                    </div>
+                </div>
+                <div class="right_header">
+                    <div class="menu">
+                        <div class="menu_up">
+                            <ul>
+                                <li class="menu_item"><a href="#">Сведения об образовательной организации</a></li>
+                                <li class="menu_item"><a href="#">Абитуриенту</a></li>
+                                <li class="menu_item"><a href="#">Студенту</a></li>
+                                <li class="menu_item"><a href="#">Родителям</a></li>
+                                <li class="menu_item"><a href="#">Сотруднику</a></li>
+                                <li class="menu_item"><a href="#">Воспитание</a></li>
+                                <li class="menu_item"><a href="#">ВСОКО</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu_down">
+                            <a class="colorblidnes_btn" href="#">
+                                <img src="colorblidnes.png" alt="">
+                                Версия для слабовидящих
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right_menu">
+                        <div class="search">
+                            <input type="text" placeholder="Поиск"/>
+                            <a href="#"><img src="search.png" alt=""></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </header>
+</body>
 </html>

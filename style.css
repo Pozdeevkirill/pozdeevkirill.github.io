@@ -1,0 +1,158 @@
+:root{
+    --main-color: #1D2849;
+    --second-color:#004F9F;
+    --dop-color:#1E97D5;
+    --second2-color:#103B74;
+    --light-color:#EAD9BB;  
+    --white: #fff;
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+header{
+    height: 184px;
+}
+.type1 {
+    background: var(--main-color);
+}
+
+
+.container {
+    max-width: 1753px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+
+.type1_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    max-width: 65%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_up ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_item {
+    max-width: 174px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.menu_item a{
+    text-decoration: none;
+    color: var(--white);
+    
+}
+
+.menu_down{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.colorblidnes_btn {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.colorblidnes_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 25%;
+}
+.colorblidnes_btn img {
+    margin-right: 7%;
+}
+
+
+
+.right_menu{
+    display: flex;
+    
+    align-items: center;
+}
+
+.search{
+    max-width: 238px;
+}
+
+.search input {
+    border: none;
+    border-bottom: 1px solid var(--light-color);
+    background-color: transparent;
+    color: var(--white);
+    padding: 5px 10px;
+}
+
+/*---------------------*/
+
+.type2{
+    margin-top: 15px;
+    background: linear-gradient(to bottom,var(--main-color) 55%, var(--second-color));
+}
+
+/*---------------------*/
+
+.type3 {
+    margin-top: 15px;
+    background-color: var(--second-color);
+    background: linear-gradient(90deg, var(--main-color) 50%, var(--second-color)50%);
+
+}
+
+.left_header{
+    background: linear-gradient(45deg, var(--main-color) 75%, var(--second2-color) 25%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right_header {
+    background-color: var(--second-color);
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.type3_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
